@@ -5,8 +5,7 @@ import "./App.css";
 function App() {
   const [showParagraph, setShowParagraph] = useState(false);
 
-  const toggleParagrahHandler = (event) => {
-    event.preventDefault();
+  const toggleParagraphHandler = (event) => {
     setShowParagraph((prevState) => !prevState);
   };
 
@@ -17,7 +16,7 @@ function App() {
         {showParagraph && <p>This is new!</p>}
       </div>
       <div className='app'>
-        <Button onClick={toggleParagrahHandler}>Change state!</Button>
+        <Button onClick={toggleParagraphHandler}>Change state!</Button>
       </div>
     </>
   );
