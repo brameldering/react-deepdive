@@ -3,11 +3,11 @@ import Button from "./components/UI/Button/Button";
 import "./App.css";
 
 function App() {
-  const [showParagraph, setIsShowParagraph] = useState(false);
+  const [showParagraph, setShowParagraph] = useState(false);
 
   const toggleParagrahHandler = (event) => {
     event.preventDefault();
-    setIsShowParagraph(!showParagraph);
+    setShowParagraph((prevState) => !prevState);
   };
 
   return (
