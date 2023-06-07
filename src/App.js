@@ -10,15 +10,11 @@ function App() {
   };
 
   return (
-    <>
-      <div className='app'>
-        <h1>Hi there!</h1>
-        {showParagraph && <p>This is new!</p>}
-      </div>
-      <div className='app'>
-        <Button onClick={toggleParagraphHandler}>Change state!</Button>
-      </div>
-    </>
+    <div className='app'>
+      <h1>Hi there!</h1>
+      {showParagraph && <p>This is new!</p>}
+      <Button onClick={toggleParagraphHandler}>Change state!</Button>
+    </div>
   );
 }
 
